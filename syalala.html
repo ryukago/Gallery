@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sethryk</title>
+</head>
+<style>
+body {
+  font-family: Courier;
+  font-size: 30px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 48%;
+  padding: 0 4px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  filter: grayscale(70%);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.2;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: grey;
+  font-size: 70px;
+  font-family: Courier;
+  padding: 15px 40px;
+  text-align: center;
+}
+
+.text2 {
+  color: grey;
+  font-size: 20px;
+  font-family: Courier;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+h1 {
+  background-color:white;
+  text-align:center;
+  color:grey;
+}
+
+h2 {
+  text-align:left;
+  color:grey;
+}
+
+h3 {
+  text-align:center;
+  color:#d3d3d3;
+  font-family:Times;
+}
+
+p {
+  text-align:center;
+  color:grey;
+  font-family:Courier;
+  font-size:18px;
+  padding: 16px 32px;
+}
+
+</style>
+<body>
+
+<h1>Sethryk</h1>
+
+<div class="container">
+  <img src="https://image.ibb.co/eyOZtL/shelterlong.jpg" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">WELCOME</div>
+    <div class="text2">This is an art portfolio website belongs to Elvina Ang</div>
+    <div class="text2">The creator is just an ordinary college student who loves drawing as a hobby</div>
+  </div>
+</div>
+
+<h2>Art Gallery</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="https://image.ibb.co/dFjSDL/garry.jpg" style="width:100%">
+    <img src="https://image.ibb.co/ctrA00/letty.jpg" style="width:100%">
+    <img src="https://preview.ibb.co/cR8yL0/Scan0023.jpg" style="width:100%">
+    <img src="https://image.ibb.co/nzsm7f/S-8091842710423.jpg" style="width:100%">
+    <img src="https://image.ibb.co/hFTetL/witch.jpg" style="width:100%">
+    <img src="https://image.ibb.co/ewnEtL/shelter.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://image.ibb.co/ewMSf0/lighting.jpg" style="width:100%">
+    <img src="https://preview.ibb.co/fabM7f/ib-garry.jpg" style="width:100%">
+    <img src="https://image.ibb.co/i6R4Sf/old-artist.jpg" style="width:100%">
+    <img src="https://image.ibb.co/dfy7f0/material-2.jpg" style="width:100%">
+    <img src="https://image.ibb.co/eCbJL0/paranoid1.jpg" style="width:100%">
+    <img src="https://image.ibb.co/gycKSf/Scan0021.jpg" style="width:100%">
+  </div>
+</div>
+
+<h2>Music Videos</h2>
+
+<div class="row">
+  <div class="column">
+    <h3>Chasing Dream</h3>
+  	<a href="https://www.youtube.com/watch?v=7zPaXES9yu4">
+  		<img src="https://image.ibb.co/dDKmq0/chasingdreamss.jpg" width="100%" height="100%">
+  	</a>
+    <p>Carlos is a middle-aged, unemployed man who keeps regretting the past. Unable to live with the burden, he attempts suicide, and his life flashes before his eyes.  </p>
+    <p>However, despite having faced death, he wakes up in his bed as if he was dreaming, now a teenager again. He realizes then that he'd been given a second chance at living his life.</p>
+	</div>
+  <div class="column">
+    <h3>Heart Tombstone</h3>
+  	<a href="https://www.youtube.com/watch?v=HWzpUVPrfmw">
+  		<img src="https://image.ibb.co/b1N6q0/hearttombstoness.jpg" width="100%" height="100%">
+  	</a>
+    <p>Now we present a short love story between Lucas and Dorothy.</p>
+    <p>Once upon a time, there were two high school students who had been spending their times together. </p>
+    <p>But the sad truth befell them. Dorothy suffered a heart disease which could only be cured by receiving heart transplants.</p>
+	</div>
+</div>
+
+<h2>Links</h2>
+
+<div class="row">
+  <div class="column">
+	<a href="https://www.deviantart.com/naota-art">
+		<img src="https://image.ibb.co/cttpSf/dA.png" width="100%" height="100%">
+	</a>
+	</div>
+  <div class="column">
+	<a href="https://www.instagram.com/sketchryk/">
+		<img src="https://image.ibb.co/btEFYL/insta.png" width="100%" height="100%">
+	</a>
+	</div>
+</div>
+
+</body>
+</html>
